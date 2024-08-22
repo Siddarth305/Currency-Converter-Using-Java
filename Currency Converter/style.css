@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+body {
+  background-color: #808080; /* Background color is gray */
+}
+.wrapper {
+  width: 90%;
+  max-width: 35em; /* Adjusted the width of the center box */
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  padding: 2em;
+  border-radius: 0.8em;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Added a slight shadow for better visual appeal */
+}
+.app-title {
+  font-size: 1.8em; /* Adjusted font size */
+  text-transform: uppercase;
+  text-align: center; /* Center-aligned the title */
+  margin-bottom: 1.5em;
+}
+label {
+  display: block;
+  font-weight: 600;
+}
+input#amount {
+  font-weight: 400;
+  font-size: 1.2em;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #02002c;
+  color: #7a789d;
+  margin-bottom: 2em;
+  padding: 0.5em;
+}
+input#amount:focus {
+  color: #9873fe;
+  border-color: #9873fe;
+}
+.dropdowns {
+  display: flex;
+  justify-content: center; /* Centering the dropdowns and button */
+  margin-bottom: 1em;
+}
+.left-section {
+  display: flex;
+  gap: 1em;
+  justify-content: center; /* Centering the contents */
+}
+select {
+  padding: 2em;
+  font-size: 1em;
+  border-radius: 1em;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 50%, center;
+  background-size: 20px 20px;
+  background-color: #0000ff; /* Dropdown background color is blue */
+  color: #ffffff;
+}
+select option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+button {
+  font-size: 1em;
+  background-color: #0000ff; /* Button color is blue */
+  padding: 1em;
+  border-radius: 5em;
+  color: #ffffff;
+  font-weight: 600;
+}
+.result-section {
+  display: flex;
+  justify-content: center; /* Center the result box */
+  margin-top: 1em;
+}
+#result {
+  font-size: 1.2em;
+  text-align: center;
+  color: #02002c;
+  background-color: #e5dbff;
+  padding: 0.8em 1em;
+  border-radius: 0.3em;
+  width: 100%; /* Make the result box span the full width */
+  max-width: 20em; /* Limit the width of the result box */
+}
